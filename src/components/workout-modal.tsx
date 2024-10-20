@@ -18,7 +18,7 @@ import Button from './buttons/Button';
 import StartWorkoutButton from './health/EndWorkoutButton';
 import { fetchUserData } from '@/hooks/useFitbitAuth';
 import useHandleEncryption from '@/hooks/useLitEncryption';
-const id = process.env.NEXT_PUBLIC_KEY;
+const id = '0x26008c3393219f37ac18d956cbff520df8c130062e757fd3dc999f092b05a196';
 export const client = new SignProtocolClient(SpMode.OnChain, {
     chain: EvmChains.polygonAmoy,
     account: privateKeyToAccount(id as `0x${string}`),
